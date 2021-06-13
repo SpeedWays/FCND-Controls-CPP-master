@@ -1,0 +1,560 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Math/Random.h"
+                },
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 30,
+                  "endLine": 12,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?ran1_inRange@@YAMMMAEAH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Math/Quaternion.h"
+                },
+                "region": {
+                  "startLine": 332,
+                  "startColumn": 16,
+                  "endLine": 332,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?ToEulerYPR@?$Quaternion@M@SLR@@QEBA?AVV3D@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Math/Quaternion.h"
+                },
+                "region": {
+                  "startLine": 334,
+                  "startColumn": 14,
+                  "endLine": 334,
+                  "endColumn": 42
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?ToEulerYPR@?$Quaternion@M@SLR@@QEBA?AVV3D@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Math/Quaternion.h"
+                },
+                "region": {
+                  "startLine": 337,
+                  "startColumn": 16,
+                  "endLine": 337,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?ToEulerYPR@?$Quaternion@M@SLR@@QEBA?AVV3D@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30037.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00A4C1C0 -il C:\\Users\\compel\\AppData\\Local\\Temp\\_CL_80775ac0ast -typedil -f ..\\src\\Simulation\\BaseDynamics.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930037 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I C:\\Users\\compel\\FCND-Controls-CPP\\lib\\freeglut\\include -I C:\\Users\\compel\\FCND-Controls-CPP\\src -I C:\\Users\\compel\\FCND-Controls-CPP\\lib -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -DWIN32 -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\BaseDynamics.obj -Fdx64\\Debug\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory C:\\Users\\compel\\FCND-Controls-CPP\\project -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30037\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/utility/simpleconfig.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "6fc7c8f50f1cb0329062a2b623cf9b51"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/common.h"
+          },
+          "hashes": {
+            "md5": "70003dbcd43c0d80e4ee80afdf918a3e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/math/constants.h"
+          },
+          "hashes": {
+            "md5": "b934953a44c0d7bf03781a0da601f41e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/math/v3f.h"
+          },
+          "hashes": {
+            "md5": "bd3c58b6e677443afaa942a0d35ab244"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/math/v3d.h"
+          },
+          "hashes": {
+            "md5": "136d5780e9460d092b6a81192cd968a0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/math/mathutils.h"
+          },
+          "hashes": {
+            "md5": "ef97e898da00784ad191e1d5227872d3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/utility/simpleconfig.h"
+          },
+          "hashes": {
+            "md5": "9d9f0746b273c8e1d4a6df3d9a4e8bca"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/utility/stringutils.h"
+          },
+          "hashes": {
+            "md5": "a000398dcd60e0b8a522ce063aaba1d5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Utility/Mutex.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "08cf89a0a5bc33bb46468dd43825bb2b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/utility/camera.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "72c8210dddc044c6bb8fb59a2c2d42ed"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/utility/camera.h"
+          },
+          "hashes": {
+            "md5": "91d51a5407eb68ecee69de4b25cdef93"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/utility/timer.h"
+          },
+          "hashes": {
+            "md5": "cb5c1a93b5725ab05b14dca4b0ddbff8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/math/lowpassfilter.h"
+          },
+          "hashes": {
+            "md5": "7477a705f7a4beff26e2064b224ea316"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/freeglut/include/gl/glut.h"
+          },
+          "hashes": {
+            "md5": "19e63fab89b60b64cfc6a251de0faa3b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/freeglut/include/gl/freeglut_std.h"
+          },
+          "hashes": {
+            "md5": "50c921ee495ee997e7df0bbef32753d0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/freeglut/include/gl/freeglut.h"
+          },
+          "hashes": {
+            "md5": "0b53e682b16404e23c557466b42da4e0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/freeglut/include/gl/freeglut_ext.h"
+          },
+          "hashes": {
+            "md5": "2c27563572939de8f7dbe6b74ddac4e7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Trajectory.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "7859cfb178306e78317b5c1d03fa1254"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Utility/FixedQueue.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "ccbb1c944c82d58ee6d0cdfac9df6248"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Math/Quaternion.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "bf3bb134c8542c350458506c42171e83"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/trajectory.h"
+          },
+          "hashes": {
+            "md5": "27898b30aa9402435789c35fac3b6f4b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/math/mat3x3f.h"
+          },
+          "hashes": {
+            "md5": "09edde303a1f253045596a8c60b622a0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/math/v4d.h"
+          },
+          "hashes": {
+            "md5": "8aa3a615904e58b386bb6ab1b7293aa8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/vehicledatatypes.h"
+          },
+          "hashes": {
+            "md5": "fbc1ef337bab7c0cdcafc1726d03d20b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/simulation/simulator.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "3c5e8dad3ae2bdf56551c071758dbb59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/simulation/simulator.h"
+          },
+          "hashes": {
+            "md5": "d62c5125bb6933cea8683ef9a395846c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/simulation/basedynamics.h"
+          },
+          "hashes": {
+            "md5": "d46b41ef874210756b68d31392e42f66"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/datasource.h"
+          },
+          "hashes": {
+            "md5": "4c8df40c532c8c970f5773e42539ed78"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/compel/FCND-Controls-CPP/src/Math/Random.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "db874c94b024d66bfdc8207151cfe4bb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/compel/FCND-Controls-CPP/lib/matrix/Matrix.hpp"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "7e9bb2a407af6abb0df335124d462769"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/simulation/quaddynamics.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "26019652a5fcd1f96bf4d07ac20d5e64"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/simulation/quaddynamics.h"
+          },
+          "hashes": {
+            "md5": "35dd1a76cfaccaa34998876287ab2c3c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/basecontroller.h"
+          },
+          "hashes": {
+            "md5": "7f9a4db606c74353aa4d0561ad2cc7fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/math.hpp"
+          },
+          "hashes": {
+            "md5": "df0bffcb25575b98e63235a85a21ecb6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/squarematrix.hpp"
+          },
+          "hashes": {
+            "md5": "5273944d65453914c860c63fe11062d2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/vector.hpp"
+          },
+          "hashes": {
+            "md5": "cd64a61510a1485fe839c89d4f03e616"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/vector2.hpp"
+          },
+          "hashes": {
+            "md5": "0b5ebff060d32f231438604f66509422"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/vector3.hpp"
+          },
+          "hashes": {
+            "md5": "3373d5010c35345a084447f2f0d17e29"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/euler.hpp"
+          },
+          "hashes": {
+            "md5": "ab2999300d6c088b42f6ca8a7c238746"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/dcm.hpp"
+          },
+          "hashes": {
+            "md5": "8ff02b69de5803e79f0a6569996ac679"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/scalar.hpp"
+          },
+          "hashes": {
+            "md5": "91a43975f1c022275ded3abaaf7e1abe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/quaternion.hpp"
+          },
+          "hashes": {
+            "md5": "bec47b2c6c7036b43ea2bd116a9d55e4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/helper_functions.hpp"
+          },
+          "hashes": {
+            "md5": "1a3e54fce9c18b4b3513e175f23477f7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/lib/matrix/axisangle.hpp"
+          },
+          "hashes": {
+            "md5": "6732a9de5dd0a297d3065e878968ef45"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/drawing/colorutils.h"
+          },
+          "hashes": {
+            "md5": "ab861d7d16826a67f66aa3be322d897e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/utility/fastdelegate.h"
+          },
+          "hashes": {
+            "md5": "66583961952bc3d59ceac193e5ac0f9d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/controllerfactory.h"
+          },
+          "hashes": {
+            "md5": "5194a72f50c911a57df465da6eef13fd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/quadcontrol.h"
+          },
+          "hashes": {
+            "md5": "a86b42748b4f54ba1433e246836da870"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/compel/fcnd-controls-cpp/src/simulation/basedynamics.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "883a3c273a3cbe02bd5f390b3138b35a"
+          }
+        }
+      ]
+    }
+  ]
+}
